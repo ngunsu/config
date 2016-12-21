@@ -32,4 +32,5 @@ call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
+Plug 'lervag/vimtex'
 call plug#end()
