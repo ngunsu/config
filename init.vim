@@ -33,4 +33,5 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
