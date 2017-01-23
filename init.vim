@@ -14,14 +14,8 @@ set expandtab " Insert spaces when tab is pressed
 set tabstop=4 " Each tabe is equivalent to 4 spaces 
 set shiftwidth=4
 " Language
-set spell
+"set spell
 set spelllang=en_us
-
-" Vertical line at column 120
-":set colorcolumn=+1        " highlight column after 'textwidth'
-":set colorcolumn=+1,+2,+3  " highlight three columns after 'textwidth'
-":highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
-":set colorcolumn=121
 
 " Relative numbering
 function! NumberToggle()
@@ -39,9 +33,15 @@ nnoremap <leader>r :call NumberToggle()<cr>
 " ----------------------------------------------------------------------------------------------------------------------
 " Plugins config 
 " ----------------------------------------------------------------------------------------------------------------------
-" youcompleteme
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+" Utilsnips
+let g:UltiSnipsExpandTrigger="<leader><tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-w>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+
+"Deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#max_list = 10
+let g:deoplete#enable_refresh_always = 1
 
 " Tender theme
 if (has("termguicolors"))
@@ -64,7 +64,7 @@ let g:goyo_height = 95
 let g:goyo_linenr = 1
 
 " Nerdtree
-nnoremap <leader><Tab> :NERDTreeToggle<cr>
+nnoremap <leader>e :NERDTreeToggle<cr>
 
 " Plugins
 " Need to install this before
@@ -75,7 +75,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/goyo.vim'
