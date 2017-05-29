@@ -33,6 +33,10 @@ nnoremap <leader>r :call NumberToggle()<cr>
 " ----------------------------------------------------------------------------------------------------------------------
 " Plugins config 
 " ----------------------------------------------------------------------------------------------------------------------
+" Change font
+
+set guifont=Iosevka
+
 " Utilsnips
 let g:UltiSnipsExpandTrigger="<leader><tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-w>"
@@ -73,6 +77,7 @@ nnoremap <leader>e :NERDTreeToggle<cr>
 call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
