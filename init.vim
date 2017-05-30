@@ -35,6 +35,8 @@ nnoremap <leader>r :call NumberToggle()<cr>
 " ----------------------------------------------------------------------------------------------------------------------
 " Change font
 
+"brew tap caskroom/fonts
+"brew cask install font-iosevka
 set guifont=Iosevka
 
 " Utilsnips
