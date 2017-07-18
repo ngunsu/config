@@ -30,6 +30,9 @@ endfunc
 " Toggle between normal and relative numbering.
 nnoremap <leader>r :call NumberToggle()<cr>
 
+" Exit Terminal mode
+:tnoremap <Esc> <C-\><C-n>
+
 " ----------------------------------------------------------------------------------------------------------------------
 " Plugins config 
 " ----------------------------------------------------------------------------------------------------------------------
