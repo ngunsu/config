@@ -53,12 +53,11 @@ let g:deoplete#max_list = 10
 let g:deoplete#enable_refresh_always = 1
 
 " Tender theme
-if (has("termguicolors"))
- set termguicolors
+if has('macunix')
+    if (has("termguicolors"))
+        set termguicolors
+    endif
 endif
-
-" For Neovim 0.1.3 and 0.1.4
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Theme
 syntax enable
@@ -74,6 +73,19 @@ let g:goyo_linenr = 1
 
 " Nerdtree
 nnoremap <leader>e :NERDTreeToggle<cr>
+
+" Syntastic
+" pip3 install flake8
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_flake8_args='--ignore=E501'
 
 " Plugins
 " Need to install this before
@@ -93,4 +105,5 @@ Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender.vim'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
