@@ -87,6 +87,9 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_python_flake8_args='--ignore=E501'
 
+"Fix weird symbols
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+
 " Plugins
 " Need to install this before
 " curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
