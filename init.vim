@@ -74,6 +74,9 @@ let g:goyo_linenr = 1
 " Nerdtree
 nnoremap <leader>e :NERDTreeToggle<cr>
 
+" Nerdtree
+nnoremap <leader>s :TagbarToggle<cr>
+
 " Syntastic
 " pip3 install flake8
 set statusline+=%#warningmsg#
@@ -98,6 +101,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-surround'
+Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
