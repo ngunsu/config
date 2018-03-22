@@ -73,6 +73,7 @@ let g:goyo_linenr = 1
 
 " Nerdtree
 nnoremap <leader>e :NERDTreeToggle<cr>
+let NERDTreeIgnore = ['\.pyc$','\.aux$', '\.log$']
 
 " Nerdtree
 nnoremap <leader>s :TagbarToggle<cr>
