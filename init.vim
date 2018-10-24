@@ -46,6 +46,7 @@ set guifont=Iosevka
 let g:UltiSnipsExpandTrigger="<leader><tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-w>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:ultisnips_python_style = 'numpy' 
 
 " Vimtex
 let g:vimtex_latexmk_progname = 'nvr'
@@ -87,15 +88,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'passive_filetypes': ['tex','html','css','md'] }
 let g:syntastic_python_flake8_args='--ignore=E501'
-
-" Utilsnips
-let g:ultisnips_python_style = 'numpy' 
+let g:syntastic_python_checkers = ['flake8']
 
 "Fix weird symbols
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
