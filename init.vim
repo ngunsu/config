@@ -100,6 +100,11 @@ let g:syntastic_python_checkers = ['flake8']
 "Fix weird symbols
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 
+" Fuzzy search
+" sudo apt install fzy
+" Install https://github.com/BurntSushi/ripgrep
+ nnoremap <C-p> :FuzzyOpen<CR>
+
 " Plugins
 " Need to install this before
 " curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -120,4 +125,5 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender.vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'cloudhead/neovim-fuzzy'
 call plug#end()
