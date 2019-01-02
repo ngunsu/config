@@ -51,10 +51,14 @@ let g:ultisnips_python_style = 'numpy'
 " Vimtex
 let g:vimtex_latexmk_progname = 'nvr'
 
-"Deoplete
+" Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#max_list = 10
 let g:deoplete#enable_refresh_always = 1
+
+" Toggle spelling
+nnoremap <leader>c :set invspell<CR>
+
 
 " Tender theme
 if has('macunix')
