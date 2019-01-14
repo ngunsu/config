@@ -130,4 +130,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'cloudhead/neovim-fuzzy'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
 call plug#end()
