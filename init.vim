@@ -5,6 +5,10 @@ let mapleader="\<SPACE>"
 inoremap jk <esc>
 cnoremap jk <C-C>
 
+"  Move through jedi with j and k
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+
 " ----------------------------------------------------------------------------------------------------------------------
 " Editor
 " ----------------------------------------------------------------------------------------------------------------------
@@ -59,6 +63,7 @@ let g:vimtex_latexmk_progname = 'nvr'
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#max_list = 10
 let g:deoplete#enable_refresh_always = 1
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 
 " Toggle spelling
 nnoremap <leader>c :set invspell<CR>
