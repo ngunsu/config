@@ -6,8 +6,14 @@ inoremap jk <esc>
 cnoremap jk <C-C>
 
 "  Move through jedi with j and k
-inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
-inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+inoremap <expr> <C-j> ((pumvisible())?("\<C-n>"):("Ctrl-j"))
+inoremap <expr> <C-k> ((pumvisible())?("\<C-p>"):("Ctrl-k"))
+
+" Force me to use vim as should be used
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
 " ----------------------------------------------------------------------------------------------------------------------
 " Editor
