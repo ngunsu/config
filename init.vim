@@ -3,6 +3,7 @@ let mapleader="\<SPACE>"
 
 " Change esc as default key to leave environment
 inoremap jk <esc>
+tnoremap jk <C-\><C-n> 
 cnoremap jk <C-C>
 
 "  Move through jedi with j and k
