@@ -72,6 +72,9 @@ let g:deoplete#max_list = 10
 let g:deoplete#enable_refresh_always = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 
+" Vim snippets
+let g:tex_flavor = "latex"
+
 " Toggle spelling
 nnoremap <leader>c :set invspell<CR>
 
@@ -141,7 +144,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'Shougo/neoinclude.vim'
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+Plug 'ngunsu/vim-snippets'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
