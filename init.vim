@@ -27,6 +27,9 @@ set ruler " Show the line and column number of the cursor
 set background=dark " Set dark background
 set expandtab " Insert spaces when tab is pressed
 set tabstop=4 " Each tabe is equivalent to 4 spaces 
+filetype plugin indent on
+syntax on
+
 set shiftwidth=4
 " Language
 "set spell
