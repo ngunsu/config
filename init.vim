@@ -119,7 +119,9 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'passive_filetypes': ['tex','html','css','md', 'cpp'] }
 let g:syntastic_python_flake8_args='--ignore=E501,E402'
 let g:syntastic_python_checkers = ['flake8']
-
+let g:syntastic_cpp_checkers=['']
+let g:syntastic_cuda_checkers=['']
+let g:syntastic_c_checkers=['']
 
 "Fix weird symbols
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
