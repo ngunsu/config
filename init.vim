@@ -68,6 +68,8 @@ let g:ultisnips_python_style = 'numpy'
 
 " Vimtex
 let g:vimtex_latexmk_progname = 'nvr'
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
