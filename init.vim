@@ -159,7 +159,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 call plug#end()
