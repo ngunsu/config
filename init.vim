@@ -162,4 +162,6 @@ Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
+Plug 'kalekundert/vim-coiled-snake'
+Plug 'Konfekt/FastFold'
 call plug#end()
