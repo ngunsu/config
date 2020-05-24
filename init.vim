@@ -71,11 +71,6 @@ let g:vimtex_latexmk_progname = 'nvr'
 set conceallevel=1
 let g:tex_conceal='abdmg'
 
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#max_list = 10
-let g:deoplete#enable_refresh_always = 1
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 
 " Vim snippets
 let g:tex_flavor = "latex"
@@ -147,8 +142,6 @@ Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
 Plug 'Shougo/neoinclude.vim'
 Plug 'SirVer/ultisnips'
 Plug 'ngunsu/vim-snippets'
@@ -164,4 +157,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'kalekundert/vim-coiled-snake'
 Plug 'Konfekt/FastFold'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
