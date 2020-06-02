@@ -123,6 +123,7 @@ let g:syntastic_cpp_checkers=['']
 let g:syntastic_cuda_checkers=['']
 let g:syntastic_c_checkers=['']
 
+
 "Fix weird symbols
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 
