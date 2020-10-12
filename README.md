@@ -1,3 +1,7 @@
-## List
+# Neovim configuration and installer
 
-* init.vim: Neovim
+To install in ubuntu 18.04
+
+```bash
+./install_ubuntu_18.04.sh
+```
