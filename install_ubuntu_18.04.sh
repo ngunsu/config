@@ -14,7 +14,7 @@ mkdir -p $HOME/.config/nvim
 ln -s $PWD/init.vim $HOME/.config/nvim/init.vim
 ln -s $PWD/coc-settings.json $HOME/.config/nvim/coc-settings.json
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-python3 -m pip install flake8 pynvim
+python3 -m pip install flake8 pynvim jedi
 nvim +PlugInstall +qall
 ln -s $HOME/.config/nvim/plugged/tender.vim/colors $HOME/.config/nvim/colors
 nvim +'CocInstall -sync coc-python' +qall
