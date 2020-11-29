@@ -4,5 +4,6 @@
     "python.linting.pylintEnabled": false,
     "python.linting.enabled": true,
     "python.linting.flake8Args": ["--max-line-length=120"],
-    "markdownlint.config": { "default": true, "line_length": false} 
+    "markdownlint.config": { "default": true, "line_length": false} ,
+    "html.filetypes": ["html","handlebars","htmldjango","blade", "md"]
 }

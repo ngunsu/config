@@ -5,6 +5,8 @@ sudo apt update
 sudo apt install -y curl fzy python3-pip silversearcher-ag
 sudo snap install node --classic
 sudo npm -g install neovim
+sudo apt install -y ruby-dev
+sudo gem install neovim
 
 # Install neovim
 sudo snap install nvim --classic
@@ -28,7 +30,7 @@ ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 
 # Install zsh
-sudo apt install zsh
+sudo apt install -y zsh
 sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && echo 'export PATH=$PATH:~/.local/bin' >> $HOME/.zshrc
 
