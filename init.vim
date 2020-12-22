@@ -105,6 +105,11 @@ let NERDTreeIgnore = ['\.pyc$','\.aux$', '\.log$']
 " Nerdtree
 nnoremap <leader>s :TagbarToggle<cr>
 
+" Close tag
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md'
+let g:closetag_filetypes = 'html,xhtml,phtml,md'
+let g:closetag_shortcut = '>'
+
 " Syntastic
 " pip3 install flake8
 set statusline+=%#warningmsg#
@@ -139,6 +144,7 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'alvan/vim-closetag'  
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
@@ -158,4 +164,5 @@ Plug 'tpope/vim-unimpaired'
 Plug 'kalekundert/vim-coiled-snake'
 Plug 'Konfekt/FastFold'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
