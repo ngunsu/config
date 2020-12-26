@@ -17,6 +17,14 @@ ln -s $PWD/init.vim $HOME/.config/nvim/init.vim
 ln -s $PWD/coc-settings.json $HOME/.config/nvim/coc-settings.json
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 python3 -m pip install flake8 pynvim jedi
+# Install fonts
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+chmod +x install.sh
+./install.sh
+cd ..
+rm nerd-fonts
+# Install Plugs
 nvim +PlugInstall +qall
 ln -s $HOME/.config/nvim/plugged/tender.vim/colors $HOME/.config/nvim/colors
 nvim +'CocInstall -sync coc-python' +qall

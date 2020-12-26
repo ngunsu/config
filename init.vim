@@ -103,6 +103,9 @@ nnoremap <leader>e :NERDTreeToggle<cr>
 let NERDTreeIgnore = ['\.pyc$','\.aux$', '\.log$']
 
 " Nerdtree
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+let g:NERDTreeQuitOnOpen = 1
 nnoremap <leader>s :TagbarToggle<cr>
 
 " Close tag
@@ -144,6 +147,8 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 Plug 'alvan/vim-closetag'  
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
