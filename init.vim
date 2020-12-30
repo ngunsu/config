@@ -60,11 +60,12 @@ nnoremap <leader>r :call NumberToggle()<cr>
 "brew cask install font-iosevka
 set guifont=Iosevka
 
-" Utilsnips
-let g:UltiSnipsExpandTrigger="<leader><tab>"
+" Utilsnips + Cocvim
+"let g:UltiSnipsExpandTrigger="<leader><tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-w>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:ultisnips_python_style = 'numpy' 
+imap <leader><tab> <Plug>(coc-snippets-expand)
 
 " Vimtex
 let g:vimtex_latexmk_progname = 'nvr'

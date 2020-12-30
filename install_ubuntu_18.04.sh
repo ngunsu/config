@@ -29,6 +29,11 @@ nvim +PlugInstall +qall
 ln -s $HOME/.config/nvim/plugged/tender.vim/colors $HOME/.config/nvim/colors
 nvim +'CocInstall -sync coc-python' +qall
 nvim +'CocInstall -sync coc-markdownlint' +qall
+nvim +'CocInstall -sync coc-html' +qall
+nvim +'CocInstall -sync coc-snippets' +qall
+# Link custom snippets
+mkdir -p /home/$USER/.config/coc/ultisnips
+ln -s $PWD/snippets/markdown.snippets /home/$USER/.config/coc/ultisnips/markdown.snippets
 
 # Install tmux
 sudo apt install tmux
